@@ -1,0 +1,11 @@
+environments:
+  serverest:
+    server_back:  https://serverest.dev
+    server_front: https://front.serverest.dev
+    endpoint_login: /login
+    endpoint_user:  /usuarios 
+    endpoint_product: /produtos
+    endpoint_carts:  /carrinhos
+    endpoint_conclude: /concluir-compra
+    endpoint_cancel: /cancelar-compra
+

@@ -1,0 +1,4 @@
+msg:
+  create_sucess: Cadastro realizado com sucesso
+  update_sucess: Registro alterado com sucesso
+  delete_sucess: Registro excluído com sucesso

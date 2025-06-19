@@ -1,0 +1,6 @@
+serverest_login:
+elements:
+  input_mail:  xpath=//*[@id="email"] 
+  input_password: xpath=/html/body/div/div/div/form/div[2]/input
+  btn_enter: xpath=//*[@data-testid="entrar"]
+  link_register: //*[@class="btn btn-link"]

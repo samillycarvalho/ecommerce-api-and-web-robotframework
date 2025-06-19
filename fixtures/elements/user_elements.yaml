@@ -1,0 +1,15 @@
+elements:
+  input_mail:  xpath=//*[@id="email"] 
+  input_password: xpath=/html/body/div/div/div/form/div[2]/input
+  btn_enter: xpath=//*[@data-testid="entrar"]
+  link_register: //*[@class="btn btn-link"]
+  input_name_register: xpath=//*[@id="nome"]
+  input_mail_register: xpath=//*[@id="email"]
+  input_password_register: xpath=/html/body/div/div/div/form/div[3]/input
+  check_admin: xpath=/html/body/div/div/div/form/div[4]/div/input
+  btn_register: xpath=//button[@data-testid="cadastrar"]
+  home: xpath=//*[@data-testid="home"]
+  logout: xpath=//button[@data-testid="logout"]
+  list_shopping: xpath=/html/body/div[1]/div/nav/div/ul/li[2]/a
+  form_login: xpath=//form[@class="form"]
+  msg_success: xpath=//*[text()[contains(., 'Cadastro realizado com sucesso')]]
