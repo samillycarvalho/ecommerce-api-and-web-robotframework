@@ -32,16 +32,18 @@ Estrutura modular e reutilizável para facilitar manutenção e escalabilidade
 
 
 # 1. Clone este repositório
-´´´bash git clone https://github.com/usuario/repositorio.git```
+```bash
+git clone https://github.com/usuario/repositorio.git
+
 
 # 2. Acesse a pasta do projeto
-´´´bash cd repositorio```
+cd repositorio
 
 # 3. Instale as dependências
-´´´bash pip install -r requirements.txt --no-cache-dir```
+ pip install -r requirements.txt --no-cache-dir
 
 # 4. Inicie a aplicação
-´´´bash robot -d logs tests```
+ robot -d logs tests
 
 
 ### Estrutura do projeto
