@@ -1,4 +1,4 @@
-elements:
+elements_user:
   input_mail:  xpath=//*[@id="email"] 
   input_password: xpath=/html/body/div/div/div/form/div[2]/input
   btn_enter: xpath=//*[@data-testid="entrar"]
@@ -13,3 +13,9 @@ elements:
   list_shopping: xpath=/html/body/div[1]/div/nav/div/ul/li[2]/a
   form_login: xpath=//form[@class="form"]
   msg_success: xpath=//*[text()[contains(., 'Cadastro realizado com sucesso')]]
+  list_user: xpath=/html/body/div/div/div/p[2]/div[3]/div/div/a
+  new_product: xpath=/html/body/div/div/div/p[2]/div[4]/div/div/a
+  list_product: xpath=/html/body/div/div/div/p[2]/div[5]/div/div/a
+  list_all_user: xpath=/html/body/div/div/div/p/table
+  btn_edit: xpath=/html/body/div/div/div/p/table/tbody/tr[1]/td[5]/div/button[1]
+  btn_delete: xpath=//*[@id="root"]/div/div/p/table/tbody/tr[1]/td[5]/div/button[2]
