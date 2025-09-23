@@ -1,0 +1,12 @@
+elements_product:
+  new_product: xpath=/html/body/div/div/div/p[2]/div[4]/div/div/a
+  list_product: xpath=/html/body/div/div/div/p[2]/div[5]/div/div/a
+  new_product_tittlee: xpath=//*[@id="root"]/div/div/p[2]/div[4]/div/div/a
+  titler_product: xpath=/html/body/div/div/div/div/form/h1
+  name_product: xpath=//*[@id="nome"]
+  price_product: xpath=/html/body/div/div/div/div/form/div[2]/div/input
+  description_product: xpath=//*[@id="description"]
+  quantity_product: xpath=//*[@id="quantity"]
+  file_img: xpath=//*[@id="imagem"]
+  btn_new_product: xpath=//*[@id="root"]/div/div/div/form/div[6]/div/button
+  list_all_product: xpath=/html/body/div/div/div/p/table
