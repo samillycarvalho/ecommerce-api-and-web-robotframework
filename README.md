@@ -30,18 +30,18 @@ Estrutura modular e reutilizável para facilitar manutenção e escalabilidade
 
 ## 🚀 Como rodar o projeto
 
-```bash
+
 # 1. Clone este repositório
-git clone https://github.com/usuario/repositorio.git
+´´´bash git clone https://github.com/usuario/repositorio.git```
 
 # 2. Acesse a pasta do projeto
-cd repositorio
+´´´bash cd repositorio```
 
 # 3. Instale as dependências
-npm install
+´´´bash pip install -r requirements.txt --no-cache-dir```
 
 # 4. Inicie a aplicação
-npm start
+´´´bash robot -d logs tests```
 
 
 ### Estrutura do projeto
