@@ -12,10 +12,5 @@ Setup Authenticated Environment
     Set Global Variable    ${g_ENV}    ${env_dict}     
     
     Create Session    session    url=${g_ENV['server_back']}
+    Serverest User
 
-    ${body}=    Create Dictionary    email=${data['mail']}    password=${data['password']}
-    ${response}=    POST On Session    session    ${g_ENV['endpoint_login']}    json=${body}
-
-    Set Global Variable    ${g_TOKEN}    ${response.json()['authorization']}
-    ${HEADERS_AUTH}=    Create Dictionary    Authorization=${g_TOKEN}
-    Set Global Variable    ${g_HEADERS_AUTH}    ${HEADERS_AUTH}

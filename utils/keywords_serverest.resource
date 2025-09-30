@@ -32,3 +32,18 @@ Serverest Values
     Set Global Variable    ${g_DESCRIPTION}    ${description}
     Set Global Variable    ${g_PRICE}         ${price}
     Set Global Variable    ${g_QUANTITY}      ${quantity}
+
+Serverest User
+    [Documentation]    creste a user success
+    ${body}=        Body User 
+    ${response}=    POST On Session  session    url=${g_ENV['server_back']}${g_ENV['endpoint_user']}   
+    ...    json=${body}    
+    Dictionary Should Contain Item    ${response.json()}    message    ${msg['create_sucess']}
+    Status Should Be    201    ${response}
+    Set Suite Variable      ${id_user}      ${response.json()['_id']} 
+    ${body}=        Body Login User    ${g_EMAIL}    ${g_PASSWORD}
+    ${response}=    POST On Session  session    url=${g_ENV['server_back']}${g_ENV['endpoint_login']}   
+    ...    json=${body}    
+    Set Global Variable    ${g_TOKEN}    ${response.json()['authorization']}
+    ${HEADERS_AUTH}=    Create Dictionary    Authorization=${g_TOKEN}
+    Set Global Variable    ${g_HEADERS_AUTH}    ${HEADERS_AUTH}
